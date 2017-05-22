@@ -1,0 +1,37 @@
+<div class="row">
+    <form class="form-horizontal" role="form">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label class="control-label col-sm-5" for="user">User</label>
+                <div class="col-sm-7">
+                    <select id="user" name="user" class="form-control" ng-model="vm.selectedUser" ng-options="user.name for user in vm.userList track by user.id">
+                        <option value="">All</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary pull-left" ng-click="vm.getAlbums(vm.selectedUser.id)">Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary pull-left" ui-sref="album.detail({ id: 0 })">Create</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="grid" ui-grid="vm.gridOptions" ui-grid-edit ui-grid-pagination ui-grid-resize-columns ui-grid-exporter>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<div class="modal-header">
+    <h3 class="modal-title">User Detail</h3>
+</div>
+<div class="modal-body">
+    <div> 
+        <form class="form-horizontal">
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="id">ID:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.id" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Name:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.name" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="username">User Name:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.username" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.email" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address.street">Street:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.address.street" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address.suite">Suite:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.address.suite" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address.city">City:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.address.city" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address.zipcode">Zipcode:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control" ng-model="vm.user.address.zipcode" />
+                    </div>
+                </div>
+            </div>
+            <div class="sm-col-12">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="address.geo">Geo:</label>
+                    <div class="col-sm-10" >
+                        <input type="text" class="form-control col-sm-6" ng-model="vm.user.address.geo.lat" />
+                        <input type="text" class="form-control col-sm-6" ng-model="vm.user.address.geo.lng" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-danger" type="button" ng-click="vm.exit()">Close</button>
+</div>
