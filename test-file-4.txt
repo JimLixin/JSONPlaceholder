@@ -1,0 +1,6 @@
+Testaaaa
+<<<<<<< HEAD
+aawawdawd
+=======
+adawdaw
+>>>>>>> feature/test-branch-1
